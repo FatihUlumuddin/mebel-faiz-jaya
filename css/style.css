@@ -1,4 +1,8 @@
-.hero {
-  height: 60vh;
-  background: url('https://source.unsplash.com/1600x600/?furniture,wood') center/cover no-repeat;
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+.jumbotron {
+  background-image: url('https://cdn.pixabay.com/photo/2020/02/16/10/29/living-room-4852180_960_720.jpg');
+  background-size: cover;
+  color: white;
 }
