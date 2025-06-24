@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mebel Faiz Jaya</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .carousel-item {
+      height: 70vh;
+      min-height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,10 +20,35 @@
   <a class="navbar-brand" href="#">Mebel Faiz Jaya</a>
 </nav>
 
-<header class="jumbotron text-center bg-light">
-  <h1 class="display-4">Selamat Datang di Mebel Faiz Jaya</h1>
-  <p class="lead">Jl. Balai Desa, Kludan, Kec. Tanggulangin, Sidoarjo, Jawa Timur 61272</p>
-</header>
+<!-- Jumbotron dengan Carousel -->
+<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('https://cdn.pixabay.com/photo/2020/02/16/10/29/living-room-4852180_960_720.jpg');">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-4">Selamat Datang di Mebel Faiz Jaya</h1>
+        <p>Furnitur Berkualitas dari Kludan, Tanggulangin</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/17/architecture-1867187_960_720.jpg');">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-4">Desain Elegan & Fungsional</h1>
+        <p>Kursi, meja, lemari, tempat tidur, dan lainnya</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/22/21/42/bedroom-1853216_960_720.jpg');">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-4">Pengrajin Berpengalaman</h1>
+        <p>Pesan sesuai desain & kebutuhan Anda</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 
 <section class="container my-5">
   <h2 class="text-center mb-4">Tentang Kami</h2>
@@ -63,9 +95,8 @@
 <section class="bg-dark text-white text-center py-4">
   <h4>Hubungi Kami</h4>
   <p>
-    Lokasi: <a href="https://goo.gl/maps/xgrzAGz8LNkQYmx66" target="_blank" class="text-warning">Google Maps</a><br>
-    Email: <a href="mailto:info@mebelfaizjaya.com" class="text-warning">info@mebelfaizjaya.com</a><br>
-    WhatsApp: <a href="https://wa.me/6281234567890" class="text-warning">+62 812-3456-7890</a>
+    Lokasi: <a href="https://g.co/kgs/utPqfAL" target="_blank" class="text-warning">Google Maps</a><br>
+    WhatsApp: <a href="https://wa.me/6285100167615" class="text-warning">+62 851-0016-7615</a>
   </p>
 </section>
 
@@ -73,5 +104,7 @@
   &copy; <?= date('Y') ?> Mebel Faiz Jaya. All rights reserved.
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
