@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      background-color: #fef5e7; /* warna cream muda */
-      color: #4e342e; /* coklat gelap */
+      background-color: #fef5e7;
+      color: #4e342e;
       font-family: 'Segoe UI', sans-serif;
     }
 
     .navbar {
-      background-color: #8d6e63; /* coklat kayu */
+      background-color: #8d6e63;
     }
 
     .navbar-brand, .nav-link {
@@ -55,6 +55,11 @@
       background-color: #795548;
       border-color: #5d4037;
     }
+
+    .img-hover:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
   </style>
 </head>
 <body>
@@ -65,6 +70,7 @@
   </div>
 </nav>
 
+<!-- Hero Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1598300053313-4fbe3b1f4cd6');">
@@ -96,24 +102,68 @@
   </a>
 </div>
 
+<!-- Tentang Kami -->
 <section class="container text-center">
   <h2>Tentang Kami</h2>
-  <p>Mebel Faiz Jaya berlokasi di Jl. Balai Desa, Kludan, Kec. Tanggulangin, Kabupaten Sidoarjo, Jawa Timur 61272. Kami menyediakan berbagai macam furnitur berkualitas tinggi yang dapat disesuaikan dengan kebutuhan rumah Anda.</p>
+  <p>
+    Mebel Faiz Jaya berlokasi di Jl. Balai Desa, Kludan, Kec. Tanggulangin, Kabupaten Sidoarjo, Jawa Timur 61272. Kami menyediakan berbagai macam furnitur berkualitas tinggi yang dapat disesuaikan dengan kebutuhan rumah Anda.
+  </p>
 </section>
 
-<section class="container">
-  <h2 class="text-center">Kontak</h2>
-  <div class="text-center">
-    <p>📍 Alamat: Jl. Balai Desa, Kludan, Tanggulangin, Sidoarjo</p>
-    <p>📞 WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">0812-3456-7890</a></p>
-    <p>🗺️ <a href="https://maps.app.goo.gl/nr6h4uCwuotzj3FJ9" target="_blank">Lihat di Google Maps</a></p>
+<!-- Layanan Kami -->
+<section class="bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Layanan Kami</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="https://source.unsplash.com/400x300/?furniture,sofa" class="img-fluid rounded img-hover" alt="Sofa Custom">
+        <h5 class="mt-2">Pembuatan Sofa Custom</h5>
+        <p>Desain sofa sesuai keinginan Anda dengan bahan berkualitas tinggi.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="https://source.unsplash.com/400x300/?furniture,wardrobe" class="img-fluid rounded img-hover" alt="Lemari Kayu">
+        <h5 class="mt-2">Lemari Kayu Solid</h5>
+        <p>Lemari kayu jati solid dengan ukiran elegan dan fungsional.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="https://source.unsplash.com/400x300/?interior,wood" class="img-fluid rounded img-hover" alt="Interior Rumah">
+        <h5 class="mt-2">Interior Rumah</h5>
+        <p>Desain dan pemasangan interior berbahan kayu berkualitas.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Galeri Produk -->
+<section class="container text-center">
+  <h2 class="mb-4">Galeri Produk</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <img src="https://source.unsplash.com/400x300/?furniture,classic" class="img-fluid rounded img-hover" alt="Produk 1">
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="https://source.unsplash.com/400x300/?wooden,furniture" class="img-fluid rounded img-hover" alt="Produk 2">
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="https://source.unsplash.com/400x300/?interior,furniture" class="img-fluid rounded img-hover" alt="Produk 3">
+    </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section class="container text-center">
+  <h2>Kontak</h2>
+  <p>📍 Alamat: Jl. Balai Desa, Kludan, Tanggulangin, Sidoarjo</p>
+  <p>📞 WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">0812-3456-7890</a></p>
+  <p>🗺️ <a href="https://maps.app.goo.gl/nr6h4uCwuotzj3FJ9" target="_blank">Lihat di Google Maps</a></p>
+</section>
+
+<!-- Footer -->
 <footer>
   <p>&copy; 2025 Mebel Faiz Jaya</p>
 </footer>
 
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
